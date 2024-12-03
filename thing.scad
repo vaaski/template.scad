@@ -13,11 +13,3 @@ $fn = $preview ? 64 : 128;
 
 tolerance_tight = 0.125;
 tolerance_normal = 0.25;
-
-module round(roundness = 1) {
-  offset(roundness)
-    offset(-2 * roundness)
-      offset(roundness)
-        children();
-}
-
